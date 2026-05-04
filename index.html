@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de la Organización</title>
+    <!-- Cargando Tailwind CSS para el diseño -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+    <!-- Navegación -->
+    <nav class="bg-blue-600 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Comité Organizador</h1>
+            <ul class="flex space-x-4">
+                <li><a href="#noticias" class="hover:underline">Noticias</a></li>
+                <li><a href="#gestiones" class="hover:underline">Gestiones</a></li>
+                <li><a href="#salud" class="hover:underline">Servicio de Salud</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="container mx-auto p-4 mt-6">
+
+        <!-- Sección de Noticias / Actividades -->
+        <section id="noticias" class="mb-12">
+            <h2 class="text-3xl font-semibold mb-6 border-b-2 border-blue-600 pb-2">Actividades y Noticias</h2>
+            <div id="contenedor-noticias" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Aquí se inyectarán las noticias desde Google Sheets con JavaScript -->
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <p class="text-gray-500">Cargando actividades...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Gestiones de Afiliados -->
+        <section id="gestiones" class="mb-12">
+            <h2 class="text-3xl font-semibold mb-6 border-b-2 border-blue-600 pb-2">Gestiones de Afiliados</h2>
+            <div class="bg-white p-6 rounded-lg shadow">
+                <p class="mb-4">Consulta el estado de las gestiones de apoyo a nuestros afiliados.</p>
+                <!-- Aquí irá la tabla de gestiones o el formulario -->
+                <div id="contenedor-gestiones" class="overflow-x-auto">
+                    <p class="text-gray-500">Cargando gestiones...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Servicio de Salud (Calificaciones) -->
+        <section id="salud" class="mb-12">
+            <h2 class="text-3xl font-semibold mb-6 border-b-2 border-blue-600 pb-2">Evaluación Médica</h2>
+            <div class="bg-white p-6 rounded-lg shadow">
+                <p class="mb-4">Califica la atención médica recibida.</p>
+                <!-- Aquí insertaremos el formulario de Google o un formulario HTML que envíe datos al Script -->
+                <div id="contenedor-salud">
+                    <p class="text-gray-500">Cargando sistema de calificación...</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-white text-center p-4 mt-8">
+        <p>&copy; 2026 Portal de la Organización. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Aquí irá nuestro código JavaScript más adelante para conectar con Sheets -->
+    <script>
+        console.log("Página cargada. Lista para conectar con Google Apps Script.");
+    </script>
+</body>
+</html>
